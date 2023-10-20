@@ -1,40 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import itens from "./produtos.json"
 
 export default function page({ params }) {
-  const itens = [
-    {
-      nome: "Boné",
-      item: "bone",
-      descricao: "Um boné muito bonito",
-      img: "/Cards/bone.webp",
-    },
-    {
-      nome: "Calça",
-      item: "calca",
-      descricao: "Uma calça muito bonita",
-      img: "/Cards/calca.webp",
-    },
-    {
-      nome: "Camisa",
-      item: "camisa",
-      descricao: "Uma camisa muito bonita",
-      img: "/Cards/camisa.webp",
-    },
-    {
-      nome: "Óculos",
-      item: "oculos",
-      descricao: "Um óculos muito bonito",
-      img: "/Cards/oculos.webp",
-    },
-    {
-      nome: "Sapato",
-      item: "sapato",
-      descricao: "Um sapato muito bonito",
-      img: "/Cards/sapato.webp",
-    },
-  ];
+  //const itens = produtos
   const item = itens.find((item) => item.item === params.item);
   return (
     <div className="flex mt-4 items-center justify-center flex-col w-screen gap-y-2 px-4">

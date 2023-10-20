@@ -7,5 +7,5 @@
 }
 
 body {
-    @apply bg-cinza-escuro text-white
+    @apply bg-cinza-escuro text-white w-screen overflow-x-hidden
 }
