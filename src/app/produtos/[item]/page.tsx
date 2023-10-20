@@ -37,20 +37,21 @@ export default function page({ params }) {
   ];
   const item = itens.find((item) => item.item === params.item);
   return (
-    <div className="flex mt-8 items-center justify-center flex-col w-screen gap-y-8 px-2">
-      <h1 className="text-4xl">PRODUTOS</h1>
+    <div className="flex mt-4 items-center justify-center flex-col w-screen gap-y-2 px-4">
       <div className="max-w-sm rounded overflow-hidden shadow-2xl">
-        <Image
-          src={item.img}
-          className="w-full"
-          alt={item.nome}
-          width={400}
-          height={400}
-          priority
-        />
+        <div className="max-w-80 max-h-80 overflow-hidden">
+          <Image
+            src={item.img}
+            className="w-full hover:scale-110 overflow-hidden max-h-80 duration-500 transition-transform"
+            alt={item.nome}
+            width={400}
+            height={400}
+            priority
+          />
+        </div>
         <div className="px-6 py-4">
-          <div className="font-bold text-xl mb-2 capitalize">{item.nome}</div>
-          <p className="text-gray-700 text-base">{item.descricao}</p>
+          <div className="font-bold text-2xl mb-1 capitalize">{item.nome}</div>
+          <p className="text-zinc-100 text-lg">{item.descricao}</p>
         </div>
       </div>
       <Link className="text-blue-400 text-xl mt-8" href="/produtos">

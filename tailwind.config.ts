@@ -18,10 +18,14 @@ const config: Config = {
           escuro: "#C70039",
           claro: "#FF6969",
         },
+        laranja: {
+          claro: "#FF4D00"
+        },
         branco: "#FFF5E0",
         azul: "#141E46",
         cinza: {
-          escuro: "#000",
+          escuro: "#272121",
+          claro: "#443737"
         },
       },
     },

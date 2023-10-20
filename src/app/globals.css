@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 .nav-active {
-    @apply text-red-500;
+    @apply text-laranja-claro
+}
+
+body {
+    @apply bg-cinza-escuro text-white
 }
