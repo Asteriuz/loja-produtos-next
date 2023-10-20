@@ -46,6 +46,7 @@ export default function page({ params }) {
           alt={item.nome}
           width={400}
           height={400}
+          priority
         />
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2 capitalize">{item.nome}</div>
