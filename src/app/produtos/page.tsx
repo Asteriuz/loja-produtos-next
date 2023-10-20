@@ -19,9 +19,9 @@ export default function Produtos() {
           <li>
             <Link
               className="hover:text-laranja-claro  duration-300 transition-colors"
-              href="/produtos/camisa"
+              href="/produtos/sapato"
             >
-              Camisa
+              Sapato
             </Link>
           </li>
         </div>
