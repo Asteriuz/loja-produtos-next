@@ -37,7 +37,7 @@ export default function page({ params }) {
   ];
   const item = itens.find((item) => item.item === params.item);
   return (
-    <div className="flex mt-8 items-center justify-center flex-col w-screen gap-y-8">
+    <div className="flex mt-8 items-center justify-center flex-col w-screen gap-y-8 px-2">
       <h1 className="text-4xl">PRODUTOS</h1>
       <div className="max-w-sm rounded overflow-hidden shadow-2xl">
         <Image
